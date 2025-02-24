@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Alumni SMK</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+    </style>
+</head>
+<body>
+    <h2>Data Alumni SMK</h2>
+    <table id="alumniTable">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Tahun Lulus</th>
+                <th>Jurusan</th>
+                <th>Pekerjaan</th>
+                <th>Kontak</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        function loadCSV(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    let rows = data.split("\n").slice(1); // Hilangkan header
+                    let tableBody = document.querySelector("#alumniTable tbody");
+
+                    rows.forEach(row => {
+                        let cols = row.split(",");
+                        if (cols.length >= 5) {
+                            let newRow = `<tr>
+                                <td>${cols[0]}</td>
+                                <td>${cols[1]}</td>
+                                <td>${cols[2]}</td>
+                                <td>${cols[3]}</td>
+                                <td>${cols[4]}</td>
+                            </tr>`;
+                            tableBody.innerHTML += newRow;
+                        }
+                    });
+                })
+                .catch(error => console.error("Error loading CSV:", error));
+        }
+
+        loadCSV('alumni.csv'); // Pastikan file alumni.csv ada di repository GitHub
+    </script>
+</body>
+</html>
