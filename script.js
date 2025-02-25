@@ -35,7 +35,10 @@ function loadAlumni() {
         let row = `<tr>
                     <td>${alum.id}</td>
                     <td>${alum.nama}</td>
-                    <td>${alum.email}</td>
+                    <td>${alum.tahun lulus}</td>
+                    <td>${alum.jurusan}</td>
+                    <td>${alum.pekerjaan}</td>
+                    <td>${alum.kontak}</td>
                    </tr>`;
         alumniTable.innerHTML += row;
     });
