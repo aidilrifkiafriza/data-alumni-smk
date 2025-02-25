@@ -1,50 +1,35 @@
-/* Mengatur tampilan dasar halaman */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-/* Styling untuk header */
-header {
-  background-color: #007bff;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 24px;
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Styling untuk tabel */
-table {
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse;
-  background-color: white;
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: #007bff;
-  color: white;
-}
-
-/* Styling untuk tombol */
 button {
-  background-color: #28a745;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
-button:hover {
-  background-color: #218838;
+#error-message {
+    color: red;
+    margin-top: 10px;
 }
