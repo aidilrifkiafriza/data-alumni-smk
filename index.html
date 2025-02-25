@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login & Data Alumni</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+
+    <!-- Form Login -->
+    <div id="login-container">
         <h2>Login</h2>
-        <input type="text" id="username" placeholder="Masukkan username" required>
-        <input type="password" id="password" placeholder="Masukkan password" required>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
         <button onclick="login()">Login</button>
-        <p id="error-message"></p>
+        <p id="login-error" style="color: red;"></p>
+    </div>
+
+    <!-- Data Alumni (Disembunyikan saat belum login) -->
+    <div id="alumni-container" style="display: none;">
+        <h2>Data Alumni</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="alumni-data"></tbody>
+        </table>
+        <button onclick="logout()">Logout</button>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
