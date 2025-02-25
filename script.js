@@ -1,8 +1,8 @@
 // Data alumni yang akan ditampilkan (bisa juga dari database)
 const alumni = [
-    { id: 1, nama: "Budi Santoso", email: "budi@email.com" },
-    { id: 2, nama: "Siti Aisyah", email: "siti@email.com" },
-    { id: 3, nama: "Joko Widodo", email: "joko@email.com" }
+    { Andi Susanto,2020,RPL,Software Engineer,andi@example.com }
+    { Siti Aminah,2019,TKJ,Network Administrator,siti@example.com }
+    { Budi Rahman,2021,Multimedia,Graphic Designer,budi@example.com }
 ];
 
 // Username & password untuk login
