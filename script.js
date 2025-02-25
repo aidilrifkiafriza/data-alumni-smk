@@ -1,8 +1,8 @@
 // Data alumni (bisa juga diambil dari server / file JSON)
 const alumni = [
-    { id: 1, nama: "Budi Santoso", tahun lulus: "2020", pekerjaan:
-    { id: 2, nama: "Siti Aminah", tahun lulus: "2019", pekerjaan:
-    { id: 3, nama: "Budi Rahman", tahun lulus: "2021", pekerjaan:
+    { id: 1, nama: "Budi Santoso", tahun lulus: "2020", jurusan: "RPL", pekerjaan: "Software Engineer", kontak: "andi@example.com" }
+    { id: 2, nama: "Siti Aminah", tahun lulus: "2019", jurusan: "TKJ", pekerjaan: "Network Administrator", kontak: "siti@example.com" }
+    { id: 3, nama: "Budi Rahman", tahun lulus: "2021", jurusan: "Multimedia", pekerjaan: "Graphic Designer", kontak: "budi@example.com" }
 ];
 
 // Simulasi username & password
