@@ -1,24 +1,15 @@
-// Menampilkan alert saat halaman dimuat
-document.addEventListener("DOMContentLoaded", function() {
-    alert("Selamat datang di halaman data alumni!");
-});
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
 
-// Fungsi untuk menambahkan baris baru ke tabel
-function tambahAlumni() {
-    let table = document.getElementById("alumniTable");
-    let row = table.insertRow(-1);
-    
-    let cell1 = row.insertCell(0);
-    let cell2 = row.insertCell(1);
-    let cell3 = row.insertCell(2);
-    
-    cell1.innerHTML = "123";
-    cell2.innerHTML = "Nama Baru";
-    cell3.innerHTML = "email@example.com";
-}
+    // Simpan data login (hanya contoh, tidak aman untuk produksi)
+    const validUser = "admin";
+    const validPass = "12345";
 
-// Menambahkan event listener untuk tombol tambah
-let btnTambah = document.getElementById("btnTambah");
-if (btnTambah) {
-    btnTambah.addEventListener("click", tambahAlumni);
+    if (username === validUser && password === validPass) {
+        localStorage.setItem("loggedIn", "true");
+        window.location.href = "dashboard.html"; // Arahkan ke dashboard
+    } else {
+        document.getElementById("error-message").innerText = "Username atau password salah!";
+    }
 }
