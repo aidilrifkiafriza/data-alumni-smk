@@ -1,26 +1,50 @@
+/* Mengatur tampilan dasar halaman */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    color: #333;
+/* Styling untuk header */
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
 }
 
+/* Styling untuk tabel */
 table {
-    margin: auto;
-    border-collapse: collapse;
-    width: 80%;
-    background: white;
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
 }
 
 th, td {
-    padding: 10px;
-    border: 1px solid black;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
 }
 
 th {
-    background: #007bff;
-    color: white;
+  background-color: #007bff;
+  color: white;
+}
+
+/* Styling untuk tombol */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #218838;
 }
